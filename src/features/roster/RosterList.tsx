@@ -9,7 +9,7 @@ interface RosterProps {
   status: "idle" | "loading" | "failed";
   errorMessage?: string;
 }
-const RosterList = ({ data, status }: RosterProps) => {
+const RosterList = ({ data }: RosterProps) => {
   return (
     <div className="RosterTableList">
       <div className="RosterName">

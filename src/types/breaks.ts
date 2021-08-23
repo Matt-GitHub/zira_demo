@@ -1,5 +1,7 @@
-type Breaks = {
+export type Breaks = {
+  id: number;
   used: boolean;
   on_break: boolean;
-  duration: number;
+  scheduled_duration: number;
+  used_duration: number;
 };

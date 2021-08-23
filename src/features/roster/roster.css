@@ -1,0 +1,122 @@
+.RosterTableShell {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(0, 0, 0);
+  max-width: 100%;
+  width: 70%;
+}
+
+.RosterTableHeaders {
+  display: flex;
+  justify-content: space-between;
+  color: rgb(98, 98, 103);
+  max-width: 100%;
+}
+
+.RosterTableHeaders :first-child {
+  width: 30%;
+}
+
+.RosterTableHeaders :not(:first-child) {
+  text-align: left;
+  width: 17.5%;
+}
+
+.RosterTableList {
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  align-items: center;
+  border-bottom: 1px solid rgb(87, 87, 93);
+}
+
+.RosterTableList :first-child {
+  width: 30%;
+}
+
+.RosterTableList :not(:first-child) {
+  text-align: left;
+  width: 17.5%;
+}
+
+.RosterName {
+  display: flex;
+}
+
+.RosterNameData {
+  display: flex;
+  flex-direction: column;
+  width: 150px !important;
+}
+
+.BreakShell {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.break {
+  background-color: rgb(42, 42, 48);
+  border-radius: 25%;
+  border: 1px solid rgb(58, 58, 64);
+  width: 15% !important;
+  padding: 1%;
+  margin-right: 5%;
+  text-align: center !important;
+  color: rgb(213, 211, 216);
+}
+
+.long {
+  border: 1px solid rgb(136, 101, 47);
+  background-color: rgb(67, 51, 24);
+}
+
+.short {
+  border: 1px solid rgb(24, 63, 114);
+  background-color: rgb(13, 34, 58);
+}
+
+.over {
+  background-color: rgb(101, 114, 125);
+}
+
+.status {
+  padding: 5px 10px;
+  border-radius: 40px;
+  width: 100px !important;
+  text-align: center;
+  color: black;
+  font-weight: 600;
+}
+
+.Late {
+  background-color: rgb(251, 83, 81);
+}
+
+.Working {
+  background-color: rgb(27, 157, 103);
+}
+.onBreakShort {
+  background-color: rgb(35, 114, 218);
+}
+
+.onBreakLong {
+  background-color: rgb(252, 184, 78);
+}
+
+.NotStarted {
+  color: rgb(213, 211, 216);
+  border: 1px solid rgb(213, 211, 216);
+}
+
+.ClockedOut {
+  background-color: rgb(42, 42, 48);
+  color: rgb(87, 87, 93);
+}
+
+img {
+  border-radius: 100px;
+  height: 50px;
+  max-width: 50px;
+  margin-right: 20px;
+}

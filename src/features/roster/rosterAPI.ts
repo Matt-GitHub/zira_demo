@@ -1,22 +1,12 @@
 //mock function making an async request for roster
 import { Roster } from "../../types/rosters";
+import { rosterInitialState } from "./rosterInitialState";
 
-const initialState: Roster[] = [
-  {
-    id: 1,
-    name: "Matthew Bedard",
-    role: "Line Cook",
-    scheduled_check_in: "6am",
-    scheduled_check_out: "9pm",
-    check_in: "6am",
-    check_out: null,
-    status: "Working"
-  }
-];
+const initialState: Roster[] = [...rosterInitialState];
 
-export function fetchRoster(seed = initialState) {
+export async function fetchRoster(seed = initialState) {
   return new Promise<{ data: Roster[] }>(resolve =>
-    setTimeout(() => resolve({ data: seed }), 500)
+    setTimeout(() => resolve({ data: seed }), 1000)
   );
 }
 

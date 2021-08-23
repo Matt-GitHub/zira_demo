@@ -24,10 +24,34 @@ const RosterMembers = () => {
         <p>11:41 am</p>
         <p>Saturday June, 19</p>
         <div className="filterValues">
-          <button onClick={() => setRosterFilter(null)}>All</button>
-          <button onClick={() => setRosterFilter("Working")}>Working</button>
-          <button onClick={() => setRosterFilter("Late")}>Late</button>
-          <button onClick={() => setRosterFilter("On Break")}>Break</button>
+          <button
+            id={rosterFilter === null ? "AllFilter" : null}
+            className="filteredButton"
+            onClick={() => setRosterFilter(null)}
+          >
+            All
+          </button>
+          <button
+            id={rosterFilter === "Working" ? "WorkingFilter" : null}
+            className="filteredButton"
+            onClick={() => setRosterFilter("Working")}
+          >
+            Working
+          </button>
+          <button
+            id={rosterFilter === "Late" ? "LateFilter" : null}
+            className="filteredButton"
+            onClick={() => setRosterFilter("Late")}
+          >
+            Late
+          </button>
+          <button
+            id={rosterFilter === "On Break" ? "BreakFilter" : null}
+            className="filteredButton"
+            onClick={() => setRosterFilter("On Break")}
+          >
+            Break
+          </button>
         </div>
       </div>
       <div className="RosterTableShell">

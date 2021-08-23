@@ -13,6 +13,7 @@
 
 .CommandShell {
   display: flex;
+  flex-direction: column;
   width: 30%;
 }
 
@@ -133,4 +134,34 @@ img {
   height: 50px;
   max-width: 50px;
   margin-right: 20px;
+}
+
+.filteredButton {
+  width: 125px;
+  height: 60px;
+  border-radius: 2px;
+  border: 0px solid black;
+  margin: 5px;
+  background-color: black;
+  color: white;
+}
+
+.LateFilter {
+  background-color: red;
+}
+#BreakFilter {
+  background-color: white;
+  color: black;
+}
+#AllFilter {
+  background-color: white;
+  color: black;
+}
+#LateFilter {
+  background-color: white;
+  color: black;
+}
+#WorkingFilter {
+  background-color: white;
+  color: black;
 }

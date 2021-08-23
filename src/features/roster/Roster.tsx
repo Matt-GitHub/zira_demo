@@ -18,6 +18,7 @@ const RosterMembers = () => {
     dispatch(getRoster());
   }, [dispatch]);
 
+  // Break down command shell and roster shell into separate components for better readability
   return (
     <div className="Shell">
       <div className="CommandShell">
@@ -80,6 +81,7 @@ const RosterMembers = () => {
             );
           })
         ) : (
+          // We should not be filtering here, should be handled in redux store and dispatched as the filtered list
           value
             .filter((data: Roster) => data.status === rosterFilter)
             .map((data: Roster) => {

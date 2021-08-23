@@ -1,5 +1,6 @@
 import { Roster } from "types/rosters";
 
+// missing hourly rate and potentially total shift pay. Dates are strings currently and do not allow for actual scheduling
 export const rosterInitialState: Roster[] = [
   {
     id: 1,

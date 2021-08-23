@@ -7,6 +7,7 @@ interface StatusProps {
 
 const Status = ({ data }: StatusProps) => {
   let statusCheck: string | null;
+  // this could be cleaner -> Refactor
   if (data.status === "On Break") {
     data.breaks.forEach(breakStatus => {
       if (

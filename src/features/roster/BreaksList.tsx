@@ -6,6 +6,7 @@ interface BreakProps {
 }
 
 const BreaksList = ({ breakPeriod }: BreakProps) => {
+  // Logic needs to be updated to account for case when break is completed and spent the allocated break time
   const longBreak =
     breakPeriod.scheduled_duration < breakPeriod.used_duration &&
     breakPeriod.used === true
